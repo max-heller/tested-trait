@@ -1,0 +1,13 @@
+error: #[test_impl] on a generic impl requires specifying concrete implementations with #[test_impl(Vec < T >: Foo)]
+ --> tests/ui/test-impl-generic-type.rs:7:5
+  |
+7 |     #[test_impl]
+  |     ^^^^^^^^^^^^
+  |
+  = note: this error originates in the attribute macro `test_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: associated tests for this generic implementation can only be instantiated for concrete types
+ --> tests/ui/test-impl-generic-type.rs:9:9
+  |
+9 |     impl<T> Foo for Vec<T> {}
+  |         ^^^

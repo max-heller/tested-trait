@@ -1,0 +1,14 @@
+error[E0308]: mismatched types
+ --> tests/ui/test-wrong-return-type.rs:8:13
+  |
+8 |             5
+  |             ^ expected `()`, found integer
+
+error[E0308]: mismatched types
+  --> tests/ui/test-wrong-return-type.rs:12:38
+   |
+12 |         fn test2() -> Result<(), ()> {}
+   |                                      ^^ expected `Result<(), ()>`, found `()`
+   |
+   = note:   expected enum `Result<(), ()>`
+           found unit type `()`

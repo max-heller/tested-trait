@@ -1,0 +1,18 @@
+[package]
+name = "tested-trait"
+version = "0.1.0"
+description = "Associate tests with traits"
+documentation = "https://docs.rs/tested-trait"
+edition.workspace = true
+authors.workspace = true
+categories.workspace = true
+license = "MIT OR Apache-2.0"
+repository.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tested-trait-macros = { version = "0.1.0", path = "../tested-trait-macros" }
+
+[dev-dependencies]
+trybuild = "1.0.81"

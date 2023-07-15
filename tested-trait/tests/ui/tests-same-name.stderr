@@ -1,0 +1,5 @@
+error: the test `test` is defined multiple times
+ --> tests/ui/tests-same-name.rs:9:12
+  |
+9 |         fn test() {}
+  |            ^^^^

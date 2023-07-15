@@ -1,0 +1,20 @@
+[package]
+name = "tested-trait-macros"
+version = "0.1.0"
+description = "Macros for the tested-trait crate"
+edition.workspace = true
+authors.workspace = true
+categories.workspace = true
+license = "MIT OR Apache-2.0"
+repository.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+manyhow = "0.4.2"
+proc-macro2 = { version = "1.0.0", default-features = false }
+quote = { version = "1.0.0", default-features = false }
+syn = { version = "2.0.0", default-features = false, features = ["full", "parsing", "printing", "clone-impls", "proc-macro", "extra-traits"] }
