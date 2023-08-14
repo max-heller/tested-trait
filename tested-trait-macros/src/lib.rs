@@ -196,7 +196,7 @@ mod tested_trait {
                 } = test;
                 let run_test = match kind {
                     TestKind::Standard => quote! {{
-                        let _: () = #body;
+                        let (): () = #body;
                     }},
                     TestKind::ReturnsResult { output } => quote! {{
                         let result: #output = #body;
