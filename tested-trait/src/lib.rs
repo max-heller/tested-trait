@@ -321,7 +321,7 @@ mod tests {
     }
 
     #[test]
-    #[should_panic]
+    #[should_panic = "test did not panic as expected"]
     fn should_panic_doesnt_panic() {
         #[tested_trait]
         trait Foo {
