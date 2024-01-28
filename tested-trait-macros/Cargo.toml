@@ -14,7 +14,7 @@ repository.workspace = true
 proc-macro = true
 
 [dependencies]
-manyhow = "0.10.0"
+manyhow = "0.11.0"
 proc-macro2 = { version = "1.0.0", default-features = false }
 quote = { version = "1.0.0", default-features = false }
 syn = { version = "2.0.0", default-features = false, features = ["full", "parsing", "printing", "clone-impls", "proc-macro", "extra-traits"] }
